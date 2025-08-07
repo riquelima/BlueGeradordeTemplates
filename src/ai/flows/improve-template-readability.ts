@@ -33,7 +33,9 @@ const prompt = ai.definePrompt({
   name: 'improveTemplateReadabilityPrompt',
   input: {schema: ImproveTemplateReadabilityInputSchema},
   output: {schema: ImproveTemplateReadabilityOutputSchema},
-  prompt: `Make this visually stylish, but better:
+  prompt: `
+- Deixe melhor, mas estiloso visualmente
+- Realizar alterações significativas de tamanho de ícone, cor, posição dos elementos e criação de novos ícones baseados nos atuais
 {{{template}}}`,
 });
 
