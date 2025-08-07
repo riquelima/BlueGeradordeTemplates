@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen bg-background text-foreground">
       <header className="px-6 py-4 border-b border-border">
-        <h1 className="text-2xl font-semibold font-headline">Email Template Generator</h1>
+        <h1 className="text-2xl font-semibold font-headline">Blue Cleaning - Email Template Generator</h1>
       </header>
       <main className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-hidden">
         <EmailEditor template={template} setTemplate={setTemplate} />
