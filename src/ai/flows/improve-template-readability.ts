@@ -34,10 +34,9 @@ const prompt = ai.definePrompt({
   input: {schema: ImproveTemplateReadabilityInputSchema},
   output: {schema: ImproveTemplateReadabilityOutputSchema},
   prompt: `You are an expert email designer. You will receive an email template as an HTML string.
-Your task is to stylistically redesign the template. You should modify elements like colors, fonts, design, layout, and visual elements to make it more professional and stylish.
-However, you must preserve all the existing text, links, and logos from the original template.
+Your task is to only change the visual styling of the template. You can modify elements like colors, fonts, layout, and other visual elements to make it more professional and stylish.
+You must preserve all the existing text, links, and logos from the original template.
 Do not add, remove, or change any of the content.
-Also, ensure the icons follow a consistent visual style.
 The output should be a single HTML file with inline CSS.`,
 });
 
