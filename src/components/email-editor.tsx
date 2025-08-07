@@ -47,7 +47,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
         setTemplate(result.improvedTemplate);
         toast({
           title: 'Template Improved',
-          description: 'The AI has improved the readability of your template.',
+          description: 'The AI has improved the style of your template.',
         });
       }
     } catch (error) {
@@ -77,7 +77,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
             ) : (
               <Sparkles />
             )}
-            Improve Readability
+            Improve Style
           </Button>
           <Button onClick={handleDownload} variant="outline">
             <Download />

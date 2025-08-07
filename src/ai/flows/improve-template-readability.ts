@@ -33,11 +33,12 @@ const prompt = ai.definePrompt({
   name: 'improveTemplateReadabilityPrompt',
   input: {schema: ImproveTemplateReadabilityInputSchema},
   output: {schema: ImproveTemplateReadabilityOutputSchema},
-  prompt: `You are an expert email marketer specializing in improving email template readability.
+  prompt: `You are an expert email designer. You will receive an email template as an HTML string.
+Your task is to redesign the template to make it more stylish and professional.
 
-You will receive an email template as an HTML string. You will make suggestions and improvements to the template to improve its readability.
-
-Template: {{{template}}}`,
+IMPORTANT: You must preserve all the existing text, links, and logos from the original template.
+Do not add, remove, or change any of the content. Only modify the HTML structure and CSS styles to improve the visual design.
+The output should be a single HTML file with inline CSS.`,
 });
 
 const improveTemplateReadabilityFlow = ai.defineFlow(
