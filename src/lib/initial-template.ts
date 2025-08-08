@@ -1,4 +1,5 @@
-export const initialTemplate = `<!DOCTYPE html>
+export const initialTemplate = `
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +33,7 @@ export const initialTemplate = `<!DOCTYPE html>
 
         .header {
             background: linear-gradient(45deg, #3f51b5, #0288d1);
-            padding: 60px 20px;
+            padding: 10px 10px; /* Reduced from 20px to 10px (half of previous 20px) */
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -51,8 +52,8 @@ export const initialTemplate = `<!DOCTYPE html>
         }
 
         .header img {
-            max-width: 90%; /* Increased to 90% of the card width */
-            width: 90%; /* Ensure responsiveness */
+            max-width: 35%; /* Reduced from 70% to 35% (half of previous 70%) */
+            width: 35%; /* Reduced from 70% to 35% (half of previous 70%) */
             height: auto;
             position: relative;
             z-index: 2;
@@ -63,7 +64,7 @@ export const initialTemplate = `<!DOCTYPE html>
             color: #e3f2fd;
             font-size: 18px;
             font-weight: 300;
-            margin-top: 20px;
+            margin-top: 10px; /* Reduced from 20px to 10px to maintain proportionality */
             position: relative;
             z-index: 2;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -243,7 +244,7 @@ export const initialTemplate = `<!DOCTYPE html>
             }
 
             .header img {
-                max-width: 90%; /* Adjusted for mobile */
+                max-width: 35%; /* Adjusted for mobile to match halved size */
             }
 
             .content {
