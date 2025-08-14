@@ -34,21 +34,23 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col md:h-screen bg-transparent text-foreground">
+      <div className="flex flex-col h-screen bg-transparent text-foreground">
         <header className="px-4 md:px-6 py-2 border-b border-black/10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4">
-            <div className="flex items-center gap-4">
+          <div className="flex items-center justify-between gap-2 md:gap-4 w-full">
+            <div className="flex-1">
               <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-20 md:h-24" />
-              <h1 className="text-base sm:text-3xl md:text-4xl lg:text-5xl font-headline tracking-wider text-center md:text-left">Buteco Pé de Serra - Gerador de Templates</h1>
             </div>
-            <div className="self-end md:self-center">
+            <div className="flex-1 text-center">
+               <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-headline tracking-wider whitespace-nowrap">Buteco Pé de Serra - Gerador de Templates</h1>
+            </div>
+            <div className="flex-1 flex justify-end">
               <Button onClick={() => setShowInfoModal(true)} variant="ghost" size="icon">
                 <Info className="h-6 w-6 md:h-8 md:w-8" />
               </Button>
             </div>
           </div>
         </header>
-        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 p-4 md:overflow-hidden">
+        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-auto md:overflow-hidden">
           <div className="h-[70vh] md:h-auto">
             <EmailEditor template={template} setTemplate={setTemplate} />
           </div>
