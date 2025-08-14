@@ -18,10 +18,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen bg-background text-foreground">
-      <header className="px-6 py-4 border-b border-border">
+      <header className="px-6 py-2 border-b border-border">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-16" />
+            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-20" />
             <span className="ml-4 text-xl font-semibold text-gray-700">Buteco Pé de Serra - Gerador de Templates HTML</span>
           </div>
         </div>
