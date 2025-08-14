@@ -63,23 +63,25 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
   };
 
   return (
-    <Card className="flex flex-col h-full overflow-hidden shadow-lg">
-      <CardHeader className="flex flex-row items-center justify-between p-4 border-b">
-        <h2 className="text-lg font-semibold">HTML Editor</h2>
-        <div className="flex items-center gap-2">
+    <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-black/30 backdrop-blur-md border-white/10">
+      <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-white/10">
+        <h2 className="text-lg font-semibold tracking-wider">HTML Editor</h2>
+        <div className="flex items-center gap-4">
           <Button
             onClick={handleImproveReadability}
             disabled={isImproving}
-            className="bg-accent text-accent-foreground hover:bg-accent/90"
+            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
           >
-            {isImproving ? (
-              <LoaderCircle className="animate-spin" />
-            ) : (
-              <Sparkles />
-            )}
-            Improve Style
+             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                {isImproving ? (
+                  <LoaderCircle className="animate-spin" />
+                ) : (
+                  <Sparkles className="mr-2" />
+                )}
+                Improve Style
+             </span>
           </Button>
-          <Button onClick={handleDownload} variant="outline">
+          <Button onClick={handleDownload} variant="outline" className="bg-transparent border-white/20 hover:bg-white/10 hover:text-white">
             <Download />
             Download
           </Button>
@@ -90,7 +92,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
           value={template}
           onChange={(e) => setTemplate(e.target.value)}
           placeholder="Paste your email HTML here..."
-          className="w-full h-full resize-none border-0 rounded-none focus-visible:ring-0 font-code text-sm"
+          className="w-full h-full resize-none border-0 rounded-none focus-visible:ring-0 font-code text-sm bg-transparent"
         />
       </CardContent>
     </Card>

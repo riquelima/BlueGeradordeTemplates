@@ -8,9 +8,9 @@ interface EmailPreviewProps {
 
 export function EmailPreview({ template }: EmailPreviewProps) {
   return (
-    <Card className="flex flex-col h-full overflow-hidden shadow-lg">
-      <CardHeader className="p-4 border-b">
-        <h2 className="text-lg font-semibold">Live Preview</h2>
+    <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-black/30 backdrop-blur-md border-white/10">
+      <CardHeader className="p-4 border-b border-white/10">
+        <h2 className="text-lg font-semibold tracking-wider">Live Preview</h2>
       </CardHeader>
       <CardContent className="p-0 flex-grow bg-white">
         <iframe
