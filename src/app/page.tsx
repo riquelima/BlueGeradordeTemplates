@@ -12,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     // Randomly select one of the templates to display on initial load.
     // This runs only on the client to avoid server-client mismatch.
-    setTemplate(templates[Math.floor(Math.random() * templates.length)]);
+    setTemplate(templates[Math.floor(Math.random() * templates.length)].html);
   }, []);
 
 
@@ -27,7 +27,7 @@ export default function Home() {
       </header>
       <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-hidden">
         <EmailEditor template={template} setTemplate={setTemplate} />
-        <EmailPreview template={template} />
+        <EmailPreview template={template} setTemplate={setTemplate} />
       </div>
     </div>
   );

@@ -1,5 +1,7 @@
 export const templates = [
-`
+  {
+    name: 'Template 1',
+    html: `
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -171,8 +173,11 @@ export const templates = [
   </table>
 </body>
 </html>
-`,
 `
+  },
+  {
+    name: 'Template 2',
+    html: `
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -292,7 +297,7 @@ export const templates = [
         padding: 10px 20px;
         font-size: 14px;
       }
-      .header-table {
+      .header-_table {
         height: 230px;
         background-position: center center;
         background-size: cover;
@@ -338,6 +343,5 @@ export const templates = [
 </body>
 </html>
 `
+  },
 ];
-
-    
