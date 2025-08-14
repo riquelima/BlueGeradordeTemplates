@@ -33,7 +33,17 @@ const prompt = ai.definePrompt({
   name: 'improveTemplateReadabilityPrompt',
   input: {schema: ImproveTemplateReadabilityInputSchema},
   output: {schema: ImproveTemplateReadabilityOutputSchema},
-  prompt: `Make this HTML template visually better and more stylish. Make significant changes to icon sizes, colors, and element positions. You can change the link icons, but keep the other current icons. Preserve all original text, links, and logos.
+  prompt: `Suggest impactful visual changes to this email template to increase its aesthetic appeal and conversion rate.
+
+These suggestions can include:
+- A new, modern, and harmonious color palette.
+- Improved typography (font sizes, spacing, and weights).
+- Adjustments to alignment and proportions.
+- The insertion of subtle dividers, borders, or shadows.
+- Repositioning of elements for a better visual hierarchy.
+- More eye-catching button styles.
+
+You must keep all original images and text content intact, only adjusting the styles.
 
 The template to improve is the following:
 
