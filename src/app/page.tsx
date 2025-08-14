@@ -21,8 +21,8 @@ export default function Home() {
       <header className="px-6 py-4 border-b border-border">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/newLogo-buteco.png" alt="Blue Angels Cleaning Logo" className="h-24" />
-            <span className="ml-4 text-xl font-semibold text-gray-700">Blue Angels Cleaning - Email Template Generator</span>
+            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/newLogo-buteco.png" alt="Buteco Pé de Serra Logo" className="h-24" />
+            <span className="ml-4 text-xl font-semibold text-gray-700">Buteco Pé de Serra - Gerador de Templates HTML</span>
           </div>
         </div>
       </header>
