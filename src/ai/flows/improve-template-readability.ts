@@ -1,3 +1,4 @@
+
 'use server';
 
 /**
@@ -38,7 +39,7 @@ Suggest impactful visual changes to this email template to increase its aestheti
 
 These suggestions can include:
 - A new, modern, and harmonious color palette, including modern and neon options.
-- Improved typography (font sizes, spacing, and weights).
+- Improved typography (font sizes, spacing, and weights), including suggesting and applying different stylish fonts from Google Fonts.
 - Adjustments to alignment and proportions.
 - The insertion of subtle dividers, borders, or shadows.
 - Repositioning of elements for a better visual hierarchy, such as placing flyers in different positions or creating grids and cards.
