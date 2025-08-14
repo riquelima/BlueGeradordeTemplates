@@ -26,7 +26,9 @@ export default function Home() {
     setIsClient(true);
     // Randomly select one of the templates to display on initial load.
     // This runs only on the client to avoid server-client mismatch.
-    setTemplate(templates[Math.floor(Math.random() * templates.length)].html);
+    if (templates.length > 0) {
+      setTemplate(templates[Math.floor(Math.random() * templates.length)].html);
+    }
   }, []);
 
 
@@ -50,7 +52,7 @@ export default function Home() {
           <div className="h-[70vh] md:h-auto">
             <EmailEditor template={template} setTemplate={setTemplate} />
           </div>
-          <div className="h-[70vh] md:h-auto">
+          <div className="h-[90vh] md:h-auto">
             <EmailPreview template={template} setTemplate={setTemplate} />
           </div>
         </div>
