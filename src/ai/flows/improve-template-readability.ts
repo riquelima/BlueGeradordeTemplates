@@ -44,10 +44,11 @@ These suggestions can include:
 - Repositioning of elements for a better visual hierarchy, such as placing flyers in different positions or creating grids and cards.
 - The addition of relevant icons and emojis to enhance visual communication.
 - More eye-catching button styles.
-- Different layouts and diagramming for the flyers, including changing their size and arrangement.
-- Creative backgrounds, such as light patterns, subtle gradients, or blurred image effects in the email body.
+- Different layouts and diagramming for the flyers, including changing their size and arrangement. If there's only one flyer, create a unique and interesting layout for it.
+- Creative backgrounds, such as light patterns, subtle gradients, solid colors, or blurred image effects in the email body.
+- Improvements to the body text to make it more engaging and persuasive, based on the existing text.
 
-You must keep all original images and text content intact, only adjusting the styles and layout.
+You must keep all original images intact, only adjusting their styles and layout.
 
 The template to improve is the following:
 
