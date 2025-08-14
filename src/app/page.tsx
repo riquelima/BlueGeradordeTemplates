@@ -20,8 +20,10 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 export default function Home() {
   const [template, setTemplate] = useState<string>('');
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     // Randomly select one of the templates to display on initial load.
     // This runs only on the client to avoid server-client mismatch.
     setTemplate(templates[Math.floor(Math.random() * templates.length)].html);
@@ -30,7 +32,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="flex flex-col h-screen bg-transparent text-foreground">
+      <div className="flex flex-col md:h-screen bg-transparent text-foreground">
         <header className="px-4 md:px-6 py-2 border-b border-black/10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4">
             <div className="flex items-center gap-4">
@@ -44,9 +46,13 @@ export default function Home() {
             </div>
           </div>
         </header>
-        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-hidden">
-          <EmailEditor template={template} setTemplate={setTemplate} />
-          <EmailPreview template={template} setTemplate={setTemplate} />
+        <div className="flex-grow grid grid-cols-1 md:grid-cols-2 gap-4 p-4 md:overflow-hidden">
+          <div className="h-[70vh] md:h-auto">
+            <EmailEditor template={template} setTemplate={setTemplate} />
+          </div>
+          <div className="h-[70vh] md:h-auto">
+            <EmailPreview template={template} setTemplate={setTemplate} />
+          </div>
         </div>
       </div>
 
