@@ -37,13 +37,14 @@ const prompt = ai.definePrompt({
 Suggest impactful visual changes to this email template to increase its aesthetic appeal and conversion rate.
 
 These suggestions can include:
-- A new, modern, and harmonious color palette.
+- A new, modern, and harmonious color palette, including modern and neon options.
 - Improved typography (font sizes, spacing, and weights).
 - Adjustments to alignment and proportions.
 - The insertion of subtle dividers, borders, or shadows.
 - Repositioning of elements for a better visual hierarchy, such as placing flyers in different positions or creating grids and cards.
 - The addition of relevant icons and emojis to enhance visual communication.
 - More eye-catching button styles.
+- Different layouts and diagramming for the flyers, including changing their size and arrangement.
 
 You must keep all original images and text content intact, only adjusting the styles and layout.
 
