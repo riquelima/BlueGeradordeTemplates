@@ -50,6 +50,7 @@ These suggestions can include:
 - Improvements to the body text to make it more engaging and persuasive, based on the existing text.
 
 You must keep all original images intact, only adjusting their styles and layout.
+You must not insert any text inside the header; it should only contain the logo or an image, with its size proportional to the header.
 
 The template to improve is the following:
 
