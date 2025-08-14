@@ -45,6 +45,7 @@ These suggestions can include:
 - The addition of relevant icons and emojis to enhance visual communication.
 - More eye-catching button styles.
 - Different layouts and diagramming for the flyers, including changing their size and arrangement.
+- Creative backgrounds, such as light patterns, subtle gradients, or blurred image effects in the email body.
 
 You must keep all original images and text content intact, only adjusting the styles and layout.
 
