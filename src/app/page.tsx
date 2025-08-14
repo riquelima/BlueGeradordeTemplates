@@ -41,7 +41,7 @@ export default function Home() {
               <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-20 md:h-24" />
             </div>
             <div className="flex-1 text-center">
-               <h1 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-headline tracking-wider whitespace-nowrap">Buteco Pé de Serra - Gerador de Templates</h1>
+               <h1 className="text-sm sm:text-lg md:text-3xl lg:text-4xl font-headline tracking-wider whitespace-nowrap">Buteco Pé de Serra - Gerador de Templates</h1>
             </div>
             <div className="flex-1 flex justify-end">
               <Button onClick={() => setShowInfoModal(true)} variant="ghost" size="icon">
