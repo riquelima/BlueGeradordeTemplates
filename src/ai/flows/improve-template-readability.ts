@@ -39,15 +39,15 @@ Suggest impactful visual changes to this email template to increase its aestheti
 Feel free to generate new variations suggested by the AI that do not necessarily follow the standard, but always keep the original images.
 
 These suggestions can include:
-- A new, modern, and harmonious color palette, including modern and neon options.
+- A new, modern, and harmonious color palette, including a variety of different neon and modern color options.
 - Improved typography (font sizes, spacing, and weights), including suggesting and applying different stylish fonts from Google Fonts.
 - Adjustments to alignment and proportions.
-- The insertion of subtle dividers, borders, or shadows.
+- The insertion of stylish and varied dividers, borders, shadows, lines, and curves.
 - Repositioning of elements for a better visual hierarchy, such as placing flyers in different positions or creating grids and cards.
 - The addition of relevant icons and emojis to enhance visual communication.
 - More eye-catching button styles.
 - Different layouts and diagramming for the flyers, including changing their size and arrangement. If there's only one flyer, create a unique and interesting layout for it.
-- Creative backgrounds, such as light patterns, subtle gradients, solid colors, or blurred image effects in the email body.
+- Creative backgrounds, such as light patterns, subtle gradients, solid colors, or blur effects in the email body. The body color should be filled in different ways in each variation.
 - Improvements to the body text to make it more engaging and persuasive, based on the existing text.
 
 You must keep all original images intact, only adjusting their styles and layout.
