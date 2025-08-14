@@ -21,8 +21,8 @@ export default function Home() {
       <header className="px-6 py-2 border-b border-black/10">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-20" />
-            <h1 className="text-3xl font-headline tracking-wider">Buteco Pé de Serra - Gerador de Templates</h1>
+            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-24" />
+            <h1 className="text-4xl font-headline tracking-wider">Buteco Pé de Serra - Gerador de Templates</h1>
           </div>
         </div>
       </header>
