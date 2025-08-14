@@ -1,12 +1,19 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { EmailEditor } from '@/components/email-editor';
 import { EmailPreview } from '@/components/email-preview';
-import { initialTemplate } from '@/lib/initial-template';
+import { templates } from '@/lib/initial-templates';
 
 export default function Home() {
-  const [template, setTemplate] = useState<string>(initialTemplate);
+  const [template, setTemplate] = useState<string>('');
+
+  useEffect(() => {
+    // Randomly select one of the templates to display on initial load.
+    // This runs only on the client to avoid server-client mismatch.
+    setTemplate(templates[Math.floor(Math.random() * templates.length)]);
+  }, []);
+
 
   return (
     <div className="flex flex-col h-screen bg-background text-foreground">
@@ -14,7 +21,7 @@ export default function Home() {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img src="https://raw.githubusercontent.com/riquelima/BlueGeradordeTemplates/refs/heads/master/1-Transparente.png" alt="Blue Angels Cleaning Logo" className="h-12" />
-            <span className="ml-4 text-xl font-semibold text-gray-700">E-mail Template Generator</span>
+            <span className="ml-4 text-xl font-semibold text-gray-700">Blue Angels Cleaning - Email Template Generator</span>
           </div>
         </div>
       </header>
