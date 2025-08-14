@@ -36,6 +36,7 @@ const prompt = ai.definePrompt({
   output: {schema: ImproveTemplateReadabilityOutputSchema},
   prompt: `When improving the style, you must generate widely diverse and visually distinct versions of the template each time.
 Suggest impactful visual changes to this email template to increase its aesthetic appeal and conversion rate.
+Feel free to generate new variations suggested by the AI that do not necessarily follow the standard, but always keep the original images.
 
 These suggestions can include:
 - A new, modern, and harmonious color palette, including modern and neon options.
