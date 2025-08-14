@@ -46,8 +46,8 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
     } catch (error) {
       console.error('Download failed:', error);
       toast({
-        title: 'Download Failed',
-        description: 'Could not prepare the template for download.',
+        title: 'Falha no Download',
+        description: 'Não foi possível preparar o template para download.',
         variant: 'destructive',
       });
     }
@@ -60,15 +60,15 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
       if (result.improvedTemplate) {
         setTemplate(result.improvedTemplate);
         toast({
-          title: 'Template Improved',
-          description: 'The AI has improved the style of your template.',
+          title: 'Template Melhorado',
+          description: 'A IA melhorou o estilo do seu template.',
         });
       }
     } catch (error) {
       console.error('AI improvement failed:', error);
       toast({
-        title: 'Improvement Failed',
-        description: 'The AI could not improve the template. Please try again.',
+        title: 'Falha na Melhoria',
+        description: 'A IA não conseguiu melhor o template. Por favor, tente novamente.',
         variant: 'destructive',
       });
     } finally {
@@ -84,8 +84,8 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
       if (result.editedTemplate) {
         setTemplate(result.editedTemplate);
         toast({
-          title: 'Template Updated',
-          description: 'The AI has updated your template based on your request.',
+          title: 'Template Atualizado',
+          description: 'A IA atualizou seu template com base na sua solicitação.',
         });
       }
       setShowAskAIDialog(false);
@@ -93,8 +93,8 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
     } catch (error) {
       console.error('Ask AI failed:', error);
       toast({
-        title: 'Update Failed',
-        description: 'The AI could not update the template. Please try again.',
+        title: 'Falha na Atualização',
+        description: 'A IA não conseguiu atualizar o template. Por favor, tente novamente.',
         variant: 'destructive',
       });
     } finally {
@@ -107,7 +107,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
     <>
       <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-white/30 backdrop-blur-md border-black/10">
         <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-black/10">
-          <h2 className="text-lg font-semibold tracking-wider">HTML Editor</h2>
+          <h2 className="text-lg font-semibold tracking-wider">Editor de HTML</h2>
           <div className="flex items-center gap-4">
             <Button
               onClick={() => setShowAskAIDialog(true)}
@@ -115,7 +115,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 text-gray-900 hover:text-white">
                 <MessageSquarePlus className="mr-2" />
-                Ask AI
+                Perguntar à IA
               </span>
             </Button>
             <Button
@@ -129,12 +129,12 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
                 ) : (
                   <Sparkles className="mr-2" />
                 )}
-                Improve Style
+                Melhorar Estilo
               </span>
             </Button>
             <Button onClick={handleDownload} variant="outline" className="bg-transparent border-black/20 hover:bg-black/10 hover:text-white text-black">
               <Download />
-              Download
+              Baixar
             </Button>
           </div>
         </CardHeader>
@@ -142,7 +142,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
           <Textarea
             value={template}
             onChange={(e) => setTemplate(e.target.value)}
-            placeholder="Paste your email HTML here..."
+            placeholder="Cole seu HTML de e-mail aqui..."
             className="w-full h-full resize-none border-0 rounded-none focus-visible:ring-0 font-code text-sm bg-transparent"
           />
         </CardContent>
@@ -151,15 +151,15 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
       <Dialog open={showAskAIDialog} onOpenChange={setShowAskAIDialog}>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle>Ask AI to Edit</DialogTitle>
+            <DialogTitle>Pedir para a IA Editar</DialogTitle>
             <DialogDescription>
-              Tell the AI what changes you want to make to the template.
+              Diga à IA quais alterações você deseja fazer no template.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
             <Input
               id="ai-prompt"
-              placeholder="e.g., 'Change the background color to blue'"
+              placeholder="ex: 'Mude a cor de fundo para azul'"
               value={aiPrompt}
               onChange={(e) => setAiPrompt(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && handleAskAI()}
@@ -168,14 +168,14 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
           <DialogFooter>
             <DialogClose asChild>
               <Button type="button" variant="secondary">
-                Cancel
+                Cancelar
               </Button>
             </DialogClose>
             <Button onClick={handleAskAI} disabled={isAskingAI}>
               {isAskingAI ? (
                 <LoaderCircle className="animate-spin" />
               ) : (
-                'Submit'
+                'Enviar'
               )}
             </Button>
           </DialogFooter>

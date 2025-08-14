@@ -27,16 +27,16 @@ export function EmailPreview({ template, setTemplate }: EmailPreviewProps) {
 
   const getSelectedTemplateName = () => {
     const selectedTemplate = templates.find(t => t.html === template);
-    return selectedTemplate ? selectedTemplate.name : "Custom";
+    return selectedTemplate ? selectedTemplate.name : "Personalizado";
   }
 
   return (
     <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-white/30 backdrop-blur-md border-black/10">
       <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-black/10">
-        <h2 className="text-lg font-semibold tracking-wider">Live Preview</h2>
+        <h2 className="text-lg font-semibold tracking-wider">Visualização ao Vivo</h2>
         <Select onValueChange={handleTemplateChange} value={getSelectedTemplateName()}>
           <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Select Template" />
+            <SelectValue placeholder="Selecionar Template" />
           </SelectTrigger>
           <SelectContent>
             {templates.map((t, index) => (
@@ -44,8 +44,8 @@ export function EmailPreview({ template, setTemplate }: EmailPreviewProps) {
                 {t.name}
               </SelectItem>
             ))}
-             {getSelectedTemplateName() === 'Custom' && (
-                <SelectItem value="Custom" disabled>Custom</SelectItem>
+             {getSelectedTemplateName() === 'Personalizado' && (
+                <SelectItem value="Personalizado" disabled>Personalizado</SelectItem>
             )}
           </SelectContent>
         </Select>
