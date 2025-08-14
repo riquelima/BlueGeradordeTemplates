@@ -63,16 +63,16 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
   };
 
   return (
-    <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-black/30 backdrop-blur-md border-white/10">
-      <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-white/10">
+    <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-white/30 backdrop-blur-md border-black/10">
+      <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-black/10">
         <h2 className="text-lg font-semibold tracking-wider">HTML Editor</h2>
         <div className="flex items-center gap-4">
           <Button
             onClick={handleImproveReadability}
             disabled={isImproving}
-            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+            className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
           >
-             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 text-gray-900 hover:text-white">
                 {isImproving ? (
                   <LoaderCircle className="animate-spin" />
                 ) : (
@@ -81,7 +81,7 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
                 Improve Style
              </span>
           </Button>
-          <Button onClick={handleDownload} variant="outline" className="bg-transparent border-white/20 hover:bg-white/10 hover:text-white">
+          <Button onClick={handleDownload} variant="outline" className="bg-transparent border-black/20 hover:bg-black/10 hover:text-white text-black">
             <Download />
             Download
           </Button>
