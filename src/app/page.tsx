@@ -21,7 +21,7 @@ export default function Home() {
       <header className="px-6 py-2 border-b border-black/10">
         <div className="flex items-center justify-between">
           <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-48" />
-          <h1 className="text-8xl font-headline tracking-wider text-center flex-grow">Buteco Pé de Serra - Gerador de Templates</h1>
+          <h1 className="text-6xl font-headline tracking-wider text-center flex-grow">Buteco Pé de Serra - Gerador de Templates</h1>
           <div className="w-48"></div> {/* Spacer to balance the logo */}
         </div>
       </header>
