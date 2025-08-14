@@ -31,13 +31,15 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col h-screen bg-transparent text-foreground">
-        <header className="px-6 py-2 border-b border-black/10">
-          <div className="flex items-center justify-between">
-            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-48" />
-            <h1 className="text-6xl font-headline tracking-wider text-center flex-grow">Buteco Pé de Serra - Gerador de Templates</h1>
-            <div className="w-48 flex justify-end">
+        <header className="px-4 md:px-6 py-2 border-b border-black/10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4">
+            <div className="flex items-center gap-4">
+              <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-20 md:h-24" />
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-headline tracking-wider text-center md:text-left">Buteco Pé de Serra - Gerador de Templates</h1>
+            </div>
+            <div className="self-end md:self-center">
               <Button onClick={() => setShowInfoModal(true)} variant="ghost" size="icon">
-                <Info className="h-8 w-8" />
+                <Info className="h-6 w-6 md:h-8 md:w-8" />
               </Button>
             </div>
           </div>

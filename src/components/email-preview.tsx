@@ -32,10 +32,10 @@ export function EmailPreview({ template, setTemplate }: EmailPreviewProps) {
 
   return (
     <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-white/30 backdrop-blur-md border-black/10">
-      <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-black/10">
+      <CardHeader className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 p-4 border-b border-black/10">
         <h2 className="text-lg font-semibold tracking-wider">Visualização ao Vivo</h2>
         <Select onValueChange={handleTemplateChange} value={getSelectedTemplateName()}>
-          <SelectTrigger className="w-[180px]">
+          <SelectTrigger className="w-full md:w-[180px]">
             <SelectValue placeholder="Selecionar Template" />
           </SelectTrigger>
           <SelectContent>

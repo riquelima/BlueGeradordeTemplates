@@ -106,15 +106,16 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
   return (
     <>
       <Card className="flex flex-col h-full overflow-hidden shadow-2xl bg-white/30 backdrop-blur-md border-black/10">
-        <CardHeader className="flex flex-row items-center justify-between p-4 border-b border-black/10">
+        <CardHeader className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 p-4 border-b border-black/10">
           <h2 className="text-lg font-semibold tracking-wider">Editor de HTML</h2>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-2">
             <Button
               onClick={() => setShowAskAIDialog(true)}
               className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200"
+              size="sm"
             >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 text-gray-900 hover:text-white">
-                <MessageSquarePlus className="mr-2" />
+              <span className="relative px-3 py-2 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 text-gray-900 hover:text-white flex items-center">
+                <MessageSquarePlus className="mr-2 h-4 w-4" />
                 Perguntar à IA
               </span>
             </Button>
@@ -122,18 +123,19 @@ export function EmailEditor({ template, setTemplate }: EmailEditorProps) {
               onClick={handleImproveReadability}
               disabled={isImproving}
               className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300"
+              size="sm"
             >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 text-gray-900 hover:text-white">
+              <span className="relative px-3 py-2 transition-all ease-in duration-75 bg-white rounded-md group-hover:bg-opacity-0 text-gray-900 hover:text-white flex items-center">
                 {isImproving ? (
-                  <LoaderCircle className="animate-spin" />
+                  <LoaderCircle className="animate-spin h-4 w-4" />
                 ) : (
-                  <Sparkles className="mr-2" />
+                  <Sparkles className="mr-2 h-4 w-4" />
                 )}
                 Melhorar Estilo
               </span>
             </Button>
-            <Button onClick={handleDownload} variant="outline" className="bg-transparent border-black/20 hover:bg-black/10 hover:text-white text-black">
-              <Download />
+            <Button onClick={handleDownload} variant="outline" size="sm" className="bg-transparent border-black/20 hover:bg-black/10 hover:text-white text-black">
+              <Download className="h-4 w-4 mr-2" />
               Baixar
             </Button>
           </div>
