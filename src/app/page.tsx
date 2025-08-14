@@ -21,7 +21,7 @@ export default function Home() {
       <header className="px-6 py-2 border-b border-border">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-20" />
+            <img src="https://raw.githubusercontent.com/riquelima/BostonProCleaning/refs/heads/main/Nova-Logo-PDS-2024-02.png" alt="Buteco Pé de Serra Logo" className="h-40" />
             <span className="ml-4 text-xl font-semibold text-gray-700">Buteco Pé de Serra - Gerador de Templates HTML</span>
           </div>
         </div>
